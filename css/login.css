@@ -23,11 +23,12 @@ body {
   background-size: cover; 
 }
 .form-custom-email {
-  width: 25%;
-  background-color: rgba(0, 0, 0, 0.7); 
+  width: 100%; 
+  max-width: 400px;
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   padding: 20px;
-  color:aliceblue;
+  color: aliceblue;
 }
 .form-control {
   height: 45px; 
@@ -42,4 +43,8 @@ textarea.form-control {
 footer{
   background-color: white;
 }
-  
+@media (max-width: 576px) {
+  .form-custom-email {
+    width: 90%; 
+  }
+}

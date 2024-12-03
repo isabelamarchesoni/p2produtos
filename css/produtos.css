@@ -144,32 +144,32 @@ h1 {
     gap: 5px;
     margin-top: 10px;
 }
-/* Media Queries para dispositivos móveis */
+
 @media (max-width: 890px) {
     .container-principal {
-        flex-direction: column; /* Empilha os elementos */
+        flex-direction: column;
         align-items: center; 
     }
 
     .produtos {
-        width: 100%; /* Ocupa toda a largura */
+        width: 100%; 
     }
 
     #carrinho {
-        width: 100%; /* Ocupa toda a largura */
-        margin-top: 20px; /* Adiciona espaço acima da comanda */
+        width: 100%; 
+        margin-top: 20px; 
     }
 
     .card-container-fileiraum li, 
     .card-container-fileiradois li, 
     .card-container-fileiratres li {
-        width: 48%; /* Reduz o tamanho das acartas */
+        width: 48%; 
     }
 
     .card-container-fileiraum, 
     .card-container-fileiradois, 
     .card-container-fileiratres {
-        gap: 10px; /* Reduz o espaço entre cartas */
+        gap: 10px; 
     }
 }
 
@@ -177,6 +177,6 @@ h1 {
     .card-container-fileiraum li, 
     .card-container-fileiradois li, 
     .card-container-fileiratres li {
-        width: 100%; /* As cartas ocupam toda a largura */
+        width: 100%; 
     }
 }

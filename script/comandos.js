@@ -1,7 +1,6 @@
 //HTML Home
    
 function irparalogin(){
-    alert('Sucesso');
     location.href = "login.html"
 }
 
