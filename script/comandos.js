@@ -38,7 +38,7 @@ function irparaprodutos(){
     location.href = "produtos.html"
 }
 
-// Comanda
+// Carrinho
 
 $(document).ready(function () {
     let total = 0;
@@ -78,7 +78,7 @@ $(document).ready(function () {
     }
 
 
-    function atualizarComanda() {
+    function atualizarCarrinho() {
         $('#itens-pedido').empty(); 
         if (qtdDeftones > 0) {
             $('#itens-pedido').append("<li>Deftones: " + qtdDeftones + " x R$ " + valorDeftones.toFixed(2) + " = R$ " + (qtdDeftones * valorDeftones).toFixed(2) + "</li>");
@@ -124,7 +124,7 @@ $(document).ready(function () {
         qtdDeftones++;
         total += valorDeftones;
         atualizarInput($(this).siblings('input'), qtdDeftones);
-        atualizarComanda();
+        atualizarCarrinho();
     });
 
     
@@ -132,7 +132,7 @@ $(document).ready(function () {
         qtdTheSmiths++;
         total += valorTheSmiths;
         atualizarInput($(this).siblings('input'), qtdTheSmiths);
-        atualizarComanda();
+        atualizarCarrinho();
     });
 
     
@@ -140,7 +140,7 @@ $(document).ready(function () {
         qtdOasis++;
         total += valorOasis;
         atualizarInput($(this).siblings('input'), qtdOasis);
-        atualizarComanda();
+        atualizarCarrinho();
     });
 
     
@@ -148,7 +148,7 @@ $(document).ready(function () {
         qtdGunsRoses++;
         total += valorGunsRoses;
         atualizarInput($(this).siblings('input'), qtdGunsRoses);
-        atualizarComanda();
+        atualizarCarrinho();
     });
 
     
@@ -156,7 +156,7 @@ $(document).ready(function () {
         qtdTaylorSwift++;
         total += valorTaylorSwift;
         atualizarInput($(this).siblings('input'), qtdTaylorSwift);
-        atualizarComanda();
+        atualizarCarrinho();
     });
 
     
@@ -164,49 +164,49 @@ $(document).ready(function () {
         qtdSabrinaCarpenter++;
         total += valorSabrinaCarpenter;
         atualizarInput($(this).siblings('input'), qtdSabrinaCarpenter);
-        atualizarComanda();
+        atualizarCarrinho();
     });
 
     $('#adicionarCyndiLauper').click(function () {
         qtdCyndiLauper++;
         total += valorCyndiLauper;
         atualizarInput($(this).siblings('input'), qtdCyndiLauper);
-        atualizarComanda();
+        atualizarCarrinho();
     });
 
     $('#adicionarLouis').click(function () {
         qtdLouis++;
         total += valorLouis;
         atualizarInput($(this).siblings('input'), qtdLouis);
-        atualizarComanda();
+        atualizarCarrinho();
     });
 
     $('#adicionarRitaLee').click(function () {
         qtdRitaLee++;
         total += valorRitaLee;
         atualizarInput($(this).siblings('input'), qtdRitaLee);
-        atualizarComanda();
+        atualizarCarrinho();
     });
 
     $('#adicionarTimMaia').click(function () {
         qtdTimMaia++;
         total += valorTimMaia;
         atualizarInput($(this).siblings('input'), qtdTimMaia);
-        atualizarComanda();
+        atualizarCarrinho();
     });
 
     $('#adicionarDjavan').click(function () {
         qtdDjavan++;
         total += valorDjavan;
         atualizarInput($(this).siblings('input'), qtdDjavan);
-        atualizarComanda();
+        atualizarCarrinho();
     });
 
     $('#adicionarTribalistas').click(function () {
         qtdTribalistas++;
         total += valorTribalistas;
         atualizarInput($(this).siblings('input'), qtdTribalistas);
-        atualizarComanda();
+        atualizarCarrinho();
     });
 
     
@@ -215,7 +215,7 @@ $(document).ready(function () {
             qtdDeftones--;
             total -= valorDeftones;
             atualizarInput($(this).siblings('input'), qtdDeftones);
-            atualizarComanda();
+            atualizarCarrinho();
         }
     });
 
@@ -225,7 +225,7 @@ $(document).ready(function () {
             qtdTheSmiths--;
             total -= valorTheSmiths;
             atualizarInput($(this).siblings('input'), qtdTheSmiths);
-            atualizarComanda();
+            atualizarCarrinho();
         }
     });
 
@@ -235,7 +235,7 @@ $(document).ready(function () {
             qtdOasis--;
             total -= valorOasis;
             atualizarInput($(this).siblings('input'), qtdOasis);
-            atualizarComanda();
+            atualizarCarrinho();
         }
     });
 
@@ -244,7 +244,7 @@ $(document).ready(function () {
             qtdGunsRoses--;
             total -= valorGunsRoses;
             atualizarInput($(this).siblings('input'), qtdGunsRoses);
-            atualizarComanda();
+            atualizarCarrinho();
         }
     });
 
@@ -253,7 +253,7 @@ $(document).ready(function () {
             qtdTaylorSwift--;
             total -= valorTaylorSwift;
             atualizarInput($(this).siblings('input'), qtdTaylorSwift);
-            atualizarComanda();
+            atualizarCarrinho();
         }
     });
 
@@ -262,7 +262,7 @@ $(document).ready(function () {
             qtdSabrinaCarpenter--;
             total -= valorSabrinaCarpenter;
             atualizarInput($(this).siblings('input'), qtdSabrinaCarpenter);
-            atualizarComanda();
+            atualizarCarrinho();
         }
     });
 
@@ -271,7 +271,7 @@ $(document).ready(function () {
             qtdCyndiLauper--;
             total -= valorCyndiLauper;
             atualizarInput($(this).siblings('input'), qtdCyndiLauper);
-            atualizarComanda();
+            atualizarCarrinho();
         }
     });
 
@@ -281,7 +281,7 @@ $(document).ready(function () {
             qtdLouis--;
             total -= valorLouis;
             atualizarInput($(this).siblings('input'), qtdLouis);
-            atualizarComanda();
+            atualizarCarrinho();
         }
     });
 
@@ -290,7 +290,7 @@ $(document).ready(function () {
             qtdRitaLee--;
             total -= valorRitaLee;
             atualizarInput($(this).siblings('input'), qtdRitaLee);
-            atualizarComanda();
+            atualizarCarrinho();
         }
     });
 
@@ -299,7 +299,7 @@ $(document).ready(function () {
             qtdTimMaia--;
             total -= valorTimMaia;
             atualizarInput($(this).siblings('input'), qtdTimMaia);
-            atualizarComanda();
+            atualizarCarrinho();
         }
     });
 
@@ -308,7 +308,7 @@ $(document).ready(function () {
             qtdDjavan--;
             total -= valorDjavan;
             atualizarInput($(this).siblings('input'), qtdDjavan);
-            atualizarComanda();
+            atualizarCarrinho();
         }
     });
 
@@ -317,7 +317,7 @@ $(document).ready(function () {
             qtdTribalistas--;
             total -= valorTribalistas;
             atualizarInput($(this).siblings('input'), qtdTribalistas);
-            atualizarComanda();
+            atualizarCarrinho();
         }
     });
 
