@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Sistema de caixa</title>
+    <link rel="stylesheet" href="css/produtos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"> 
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <img src="img/LogoRed.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            Vinil
+         </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="login.html">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link itens" href="contato.html">Contato</a>
+              </li>
+            </ul>
+            
+            <button type="button" class="btn btn-outline-light ms-5 border-0" onclick="irparalogin(); return false;">
+                <img src="img/logo-icon.png" alt="Login" width="30" height="30">
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+<div class="container-principal">
+<div class="produtos">   
+    <h1 id="doce"> • Internacional</h1>
+<div class="container-principal-doces"> 
+    <ul class="card-container-doces"> 
+        <li class="card"> 
+            <p>Deftones</p> 
+            <img src="img/vinils/deftones.png" alt="Deftones" height="100px">
+            <p>R$ 150,00 </p> 
+            <div class="input-group">
+               <button id="adicionarDeftones">+</button>
+               <input type="text" value="0" readonly>
+               <button id="removerDeftones">-</button>
+           </div> 
+        </li> 
+        <li class="card">
+            <p>The Smiths</p>
+            <img src="img/vinils/TheSmiths.png" alt="The Smiths" height="100px">
+            <p>R$ 180,00</p>
+            <div class="input-group"> 
+               <button id="adicionarTheSmiths">+</button>
+               <input type="text" value="0" readonly>
+               <button id="removerTheSmiths">-</button>
+            </div> 
+        </li> 
+        <li class="card">
+            <p>Oasis</p>
+            <img src="img/vinils/Oasis.png" alt="Oasis" height="100px">
+            <p>R$ 200,00</p>
+            <div class="input-group">
+               <button id="adicionarOasis">+</button>
+               <input type="text" value="0" readonly>
+               <button id="removerOasis">-</button>
+            </div>
+        </li>
+        <li class="card">
+            <p>Guns N' Roses</p>
+            <img src="img/vinils/GunsRoses.png" alt="Guns N' Roses" height="100px">
+            <p>R$ 300,00</p>
+            <div class="input-group"> 
+               <button id="adicionarGunsRoses">+</button>
+               <input type="text" value="0" readonly>
+               <button id="removerGunsRoses">-</button>
+            </div>
+        </li> 
+    </ul> 
+</div> 
+
+<div class="container-principal-salgados"> 
+    <ul class="card-container-salgados"> 
+        <li class="card">
+            <p>Taylor Swift</p>
+            <img src="img/vinils/TaylorSwift.png" alt="Taylor Swift"  height="100px">
+            <p>R$ 200,00 </p>
+            <div class="input-group"> 
+               <button id="adiconarTaylorSwift">+</button>
+               <input type="text" value="0" readonly>
+               <button id="removerTaylorSwift">-</button>
+            </div> 
+        </li> 
+        <li class="card">
+            <p>Sabrina Carpenter</p>
+            <img src="img/vinils/SabrinaCarpenter.png" alt="Sabrina Carpenter"  height="100px">
+            <p>R$ 150,00 </p>
+            <div class="input-group">
+               <button id="adicionarSabrinaCarpenter">+</button>
+               <input type="text" value="0" readonly>
+               <button id="removerSabrinaCarpenter">-</button>
+            </div> 
+        </li> 
+        <li class="card">
+            <p>Cyndi Lauper</p>
+            <img src="img/vinils/CyndiLauper.png" alt="Cyndi Lauper"  height="100px">
+            <p>R$ 200,00 </p>
+            <div class="input-group"> 
+               <button id="adicionarCyndiLauper">+</button>
+               <input type="text" value="0" readonly>
+               <button id="removerCyndiLauper">-</button>
+            </div> 
+        </li> 
+        <li class="card">
+            <p>Louis Tomlinson</p>
+            <img src="img/vinils/faith.png" alt="Louis Tomlinson"  height="100px">
+            <p>R$ 200,00 </p>
+            <div class="input-group">
+              <button id="adicionarLouis">+</button>
+              <input type="text" value="0" readonly>
+              <button id="removerLouis">-</button>
+           </div> 
+       </li> 
+    </ul> 
+</div>
+
+    <h1 id="bebidas"> • Nacional</h1>
+<div class="container-principal-bebidas"> 
+    <ul class="card-container-bebidas"> 
+        <li class="card"> 
+            <p>Rita Lee</p>
+            <img src="img/vinils/RitaLee.png" alt="Rita Lee" height="100px">
+            <p>R$ 300,00 </p>
+            <div class="input-group"> 
+               <button id="adicionarRitaLee">+</button>
+               <input type="text" value="0" readonly>
+               <button id="removerRitaLee">-</button>
+            </div> 
+        </li> 
+        <li class="card">
+            <p>Tim Maia</p>
+            <img src="img/vinils/TimMaia.png" alt="Tim Maia" height="100px">
+            <p>R$ 300,00 </p>
+            <div class="input-group"> 
+              <button id="adicionarTimMaia">+</button>
+              <input type="text" value="0" readonly>
+              <button id="removerTimMaia">-</button>
+            </div> 
+        </li>
+        <li class="card">
+            <p>Djavan</p>
+            <img src="img/vinils/Djavan.png" alt="Djavan" height="100px">
+            <p>R$ 200,00 </p>
+            <div class="input-group"> 
+              <button id="adicionarDjavan">+</button>
+              <input type="text" value="0" readonly>
+              <button id="removerDjavan">-</button>
+            </div> 
+       </li> 
+        <li class="card">
+            <p>Tribalistas</p>
+            <img src="img/vinils/tribalistas.png" alt="Tribalistas" height="100px">
+            <p>R$ 180,00 </p>
+            <div class="input-group"> 
+              <button id="adicionarTribalistas">+</button>
+              <input type="text" value="0" readonly>
+              <button id="removerTribalistas">-</button>
+           </div> 
+        </li> 
+    </ul>
+</div>
+</div>
+        <div id="comanda"> 
+            <h3>Comanda:</h3>
+            <ul id="itens-pedido"></ul>
+            <p><strong>Total: R$<span id="total">0,00</span></strong></p>
+            <button id="btnCancelar">Cancelar</button>
+        </div>
+</div>
+      <script src="script/comandos.js"></script>
+      <footer>
+            <p>&copy; 2024 Todos os direitos reservados a Isabela Marchesoni e Breno Farias</p>
+      </footer>
+</body>
+</html>
