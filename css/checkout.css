@@ -27,9 +27,6 @@ a img {
     font-family: 'Fascinate', cursive;
   }
   
-  p{
-    font-family: "Sour Gummy", sans-serif;
-  }
   .navbar-sticky {
     position: sticky;
     
@@ -53,4 +50,8 @@ a img {
   
   textarea.form-control {
     height: 150px; 
+  }
+
+  footer{
+    background-color: white;
   }
