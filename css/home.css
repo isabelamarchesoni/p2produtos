@@ -7,20 +7,13 @@ a {
   text-decoration: none; 
 }
 
-.vermelho-escuro{
-  background-color: #ffd7a9;
-}
-
-.vermelho-medio{
-  background-color: #ffd7a9;
-}
-
-.vermelho-claro{
-  background-color: #ffd7a9;
+.cor-bege{
+    background-color: #ffd7a9;
 }
 
 h1{
   font-family: 'Fascinate', cursive;
+  color: white;
 }
 
 .font-header {
@@ -29,4 +22,7 @@ h1{
 
 #sobre{
   font-family: "Sour Gummy", sans-serif;
+}
+#contato{
+  background-color:#35000c;
 }
