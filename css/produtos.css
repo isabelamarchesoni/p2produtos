@@ -11,18 +11,10 @@ a {
     text-decoration: none; 
 }
   
-.vermelho-escuro{
+.cor-bege{
     background-color: #ffd7a9;
 }
-  
-.vermelho-medio{
-    background-color: #ffd7a9;
-}
-  
-.vermelho-claro{
-    background-color: #ffd7a9;
-}
-  
+
 h1{
     font-family: 'Fascinate', cursive;
 }
@@ -38,7 +30,7 @@ body {
 
 h1 {
     font-family: "Fascinate";
-    color: white;
+    color:  #ffd7a9;
     text-align: left;
     margin-left: 10px;
     padding-bottom: 10px;
@@ -151,9 +143,6 @@ h1 {
     justify-content: center;
     gap: 5px;
     margin-top: 10px;
-}
-footer{
-    background-color: white;
 }
 /* Media Queries para dispositivos móveis */
 @media (max-width: 890px) {
