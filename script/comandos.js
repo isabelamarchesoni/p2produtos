@@ -22,8 +22,7 @@ function logar(){
     var login = document.getElementById('Login').value;
     var senha = document.getElementById('Senha').value;
 
-    if(login == "Isabela" && senha == "Breno"){
-        alert('Sucesso');
+    if(login == "isabela@fatec.com" && senha == "breno"){
         location.href = "produtos.html";
     }
     else{

@@ -13,9 +13,10 @@
 <body> 
   <nav class="navbar navbar-expand-lg cor-bege"> 
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"> <img src="img/LogoRed.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+      <a class="navbar-brand" href="#"> 
+        <img src="img/LogoRed.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
         <span class="font-header">Vintage's</span>
-     </a>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -25,19 +26,21 @@
             <a class="nav-link active text-dark" aria-current="page" href="home.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-dark" aria-current="page" href="sobre.html">Sobre</a>
+            <a class="nav-link active text-dark" aria-current="page" href="home.html">Sobre</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active text-dark" aria-current="page" href="login.html">Produtos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-dark" aria-current="page" href="contato.html">Contato</a>
+            <a class="nav-link active text-dark" aria-current="page" href="home.html">Contato</a>
           </li>
         </ul>
-        
-        <button type="button" class="btn btn-outline-cor-bege ms-5 border-0" onclick="irparalogin(); return false;">
-            <img src="img/logo-icon.png" alt="Login" width="30" height="30">
-        </button>
+        <div class="d-flex align-items-center">
+          <p class="mb-0 me-3">Isabela Marchesoni</p>
+          <button type="button" class="btn btn-danger ms-1 border-0" onclick="irparahome(); return false;">
+            Logout
+          </button>
+        </div>
       </div>
     </div>
   </nav>
@@ -139,10 +142,10 @@
 
       <div class="col-md-4">
         <h3>Navegação</h3>
-        <p><a href="home.html" class="text-decoration-none">Home</a></p>
-        <p><a href="sobre.html" class="text-decoration-none">Sobre</a></p>
-        <p><a href="login.html" class="text-decoration-none">Produtos</a></p>
-        <p><a href="contato.html" class="text-decoration-none">Contato</a></p>
+        <p><a href="home.html" class="text-black">Home</a></p>
+        <p><a href="home.html" class="text-black">Sobre</a></p>
+        <p><a href="login.html" class="text-black">Produtos</a></p>
+        <p><a href="home.html" class="text-black">Contato</a></p>
       </div>
 
       <div class="col-md-4">
