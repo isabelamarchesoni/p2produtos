@@ -44,27 +44,78 @@
       
   <div class="d-flex min-vh-100 justify-content-center align-items-center">
     <div class="container-sm text-center form-custom-email">
-        <form class="w-100">
-            <h3>Entre em contato</h3>
-            <!-- Ajustando os inputs para ocupar mais largura -->
-            <div class="mb-3 col-12 col-md-8 mx-auto">
-                <input type="text" placeholder="Insira seu nome" class="form-control">
+        <form class="row g-3">
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Endereço</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Rua Exemplo, 123">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Endereço Secundário</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Rua Exemplo, 123">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Cidade</label>
+              <input type="text" class="form-control" id="inputCity" placeholder="Insira sua cidade">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Estado</label>
+              <select id="inputState" class="form-select">
+                <option selected>Clique Para Escolher</option>
+                <option>Acre</option>
+                <option>Alagoas</option>
+                <option>Amapá</option>
+                <option>Amazonas</option>
+                <option>Bahia</option>
+                <option>Ceará</option>
+                <option>Espírito Santo</option>
+                <option>Maranhão</option>
+                <option>Mato Grosso</option>
+                <option>Mato Grosso do Sul</option>
+                <option>Minas Gerais</option>
+                <option>Pará</option>
+                <option>Paraíba</option>
+                <option>Paraná</option>
+                <option>Pernambuco</option>
+                <option>Rio de Janeiro</option>
+                <option>Rio Grande do Norte</option>
+                <option>Rio Grande do Sul</option>
+                <option>Rondônia</option>
+                <option>Roraima</option>
+                <option>Santa Catarina</option>
+                <option>São Paulo</option>
+                <option>Sergipe</option>
+                <option>Tocantins</option>
+                <option>Distrito Federal</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">CEP</label>
+              <input type="text" class="form-control" id="inputZip" placeholder="xxxxxxxx">
+            </div>
+            <div class="mb-2 col-12 mx-auto">
+                <label class="d-block text-start">
+                    <input type="radio" name="payment" value="credit_card" required class="me-2">
+                    Cartão de Crédito
+                </label>
+                <label class="d-block text-start">
+                    <input type="radio" name="payment" value="debit_card" required class="me-2">
+                    Cartão de Débito
+                </label>
+                <label class="d-block text-start">
+                    <input type="radio" name="payment" value="boleto" required class="me-2">
+                    Boleto
+                </label>
+                <label class="d-block text-start">
+                    <input type="radio" name="payment" value="pix" required class="me-2">
+                    Pix
+                </label>
             </div>
             <div class="mb-3 col-12 col-md-8 mx-auto">
-                <input type="email" placeholder="Insira seu E-mail" class="form-control">
+                <button type="submit" onclick="irparaprodutos(); return false" class="btn btn-primary w-100">Finalizar Compra</button>
             </div>
-            <div class="mb-3 col-12 col-md-8 mx-auto">
-                <textarea placeholder="Insira sua mensagem" class="form-control" rows="4"></textarea>
-            </div>
-            <div class="mb-3 col-12 col-md-8 mx-auto">
-                <button type="submit" class="btn btn-primary w-100">Enviar</button>
-            </div>
-        </form>
+          </form>
     </div>
 </div>
-  <footer>
-    
-  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="script/comandos.js"></script>
 </body>

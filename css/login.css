@@ -26,13 +26,6 @@ h1{
 .font-header {
   font-family: 'Fascinate', cursive;
 }
-
-p{
-  font-family: "Sour Gummy", sans-serif;
-}
-.navbar-sticky {
-  position: sticky;    
-}
 body {
   background: url(../img/download.jpg) no-repeat center center fixed;
   background-size: cover; 
@@ -53,5 +46,8 @@ textarea.form-control {
 }
 .cor{
   color:#77262e;
+}
+footer{
+  background-color: white;
 }
   
