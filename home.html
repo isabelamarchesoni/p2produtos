@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&family=Fascinate&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&family=Fascinate&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/home.css">
     <title>Loja</title>
@@ -12,7 +14,7 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary"> 
     <div class="container-fluid">
       <a class="navbar-brand" href="#"> <img src="img/LogoRed.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-        Vintage's
+        <span class="font-header">Vintage's</span>
      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -20,16 +22,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            <a class="nav-link active text-dark" aria-current="page" href="home.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
+            <a class="nav-link active text-dark" aria-current="page" href="sobre.html">Sobre</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="login.html">Produtos</a>
+            <a class="nav-link active text-dark" aria-current="page" href="login.html">Produtos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="contato.html">Contato</a>
+            <a class="nav-link active text-dark" aria-current="page" href="contato.html">Contato</a>
           </li>
         </ul>
         
@@ -61,60 +63,57 @@
     </button>
   </div>
 
-    <section id="sobre">
-        <div class="container text-center mt-3">
-          <div class="row">
-            <div class="col">
-                <h1>Sobre nós!</h1>
-                <p>
-                  Seja bem-vindo à Vintage's! Aqui, a música conecta pessoas, conta histórias e transforma momentos. Queremos compartilhar a paixão de descobrir, ouvir e viver a música de forma autêntica.
-        
-        Temos uma seleção cuidadosa de vinis para todos os gostos, desde clássicos até raridades que tocam o coração. Proporcionamos uma experiência que resgata a nostalgia do vinil, enquanto se conecta com a musicalidade do presente.
-        
-        Cada visita é uma chance de redescobrir sua relação com a música, seja você um amante do vinil ou alguém que está começando a se apaixonar. Oferecemos produtos de qualidade, atendimento acolhedor e ótimas indicações.
-        
-        Estamos ansiosos para compartilhar muitos discos e momentos especiais com você.
-                </p>
-            </div>
-            <div class="col mt-3">
-              <img src="img/sobre3.jpg" width="350" height="350">
-            </div>
-          </div>
-        </div>
-    </section>
-    <section id="contato">
-      <div class="container text-center mt-3">
+  <section id="sobre" class="vermelho-medio">
+    <div class="container">
         <div class="row">
-          <div class="col">
-              <img src="img/LogoRed.svg" width="100" height="100">
-          </div>
-          <div class="col mt-0">
-            <div class="d-flex min-vh-100 justify-content-center align-items-center">
-              <div class="container-sm text-center form-custom-email">
-                  <form class="w-100">
-                      <h3>Entre em contato</h3>
-                      <!-- Ajustando os inputs para ocupar mais largura -->
-                      <div class="mb-3 col-12 col-md-8 mx-auto">
-                          <input type="text" placeholder="Insira seu nome" class="form-control">
-                      </div>
-                      <div class="mb-3 col-12 col-md-8 mx-auto">
-                          <input type="email" placeholder="Insira seu E-mail" class="form-control">
-                      </div>
-                      <div class="mb-3 col-12 col-md-8 mx-auto">
-                          <textarea placeholder="Insira sua mensagem" class="form-control" rows="4"></textarea>
-                      </div>
-                      <div class="mb-3 col-12 col-md-8 mx-auto">
-                          <button type="submit" class="btn btn-primary w-100">Enviar</button>
-                      </div>
-                  </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            <div class="col d-flex justify-content-center align-items-center"> <!-- Centralizando conteúdo horizontal e verticalmente -->
+                <div class="text-center">
+                    <h1 class="text-dark">Sobre nós!</h1>
+                    <p class="dark">
+                        Seja bem-vindo à Vintage's! Aqui, a música conecta pessoas, conta histórias e transforma momentos. Queremos compartilhar a paixão de descobrir, ouvir e viver a música de forma autêntica.
 
- 
+                        Temos uma seleção cuidadosa de vinis para todos os gostos, desde clássicos até raridades que tocam o coração. Proporcionamos uma experiência que resgata a nostalgia do vinil, enquanto se conecta com a musicalidade do presente.
+
+                        Cada visita é uma chance de redescobrir sua relação com a música, seja você um amante do vinil ou alguém que está começando a se apaixonar. Oferecemos produtos de qualidade, atendimento acolhedor e ótimas indicações.
+
+                        Estamos ansiosos para compartilhar muitos discos e momentos especiais com você.
+                    </p>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center mt-3"> <!-- Centralizando imagem horizontalmente -->
+                <img src="img/sobre3.jpg" width="350" height="350">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contato" class="vermelho-escuro">
+  <div class="container text-dark text-center">
+    <div class="row">
+      <div class="col d-flex justify-content-center align-items-center" style="height: 400px;">
+          <img src="img/LogoRed.svg" style="max-width: 35%; height: auto;">
+      </div>
+      <div class="col d-flex justify-content-center align-items-center" style="height: 400px;"> <!-- Adicionando d-flex aqui -->
+          <div class="container-sm text-center form-custom-email">
+              <form class="w-100">
+                  <h1>Entre em contato</h1>
+                  <div class="mb-3 col-12 col-md-8 mx-auto">
+                      <input type="text" placeholder="Insira seu nome" class="form-control">
+                  </div>
+                  <div class="mb-3 col-12 col-md-8 mx-auto">
+                      <input type="email" placeholder="Insira seu E-mail" class="form-control">
+                  </div>
+                  <div class="mb-3 col-12 col-md-8 mx-auto">
+                      <textarea placeholder="Insira sua mensagem" class="form-control" rows="4"></textarea>
+                  </div>
+                  <div class="mb-3 col-12 col-md-8 mx-auto">
+                      <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</section>
+
   <footer class="bg-tertiary text-dark py-4">
     <div class="container">
       <div class="row">

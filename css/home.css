@@ -6,3 +6,27 @@ a img {
 a {
   text-decoration: none; 
 }
+
+.vermelho-escuro{
+  background-color: #ffd7a9;
+}
+
+.vermelho-medio{
+  background-color: #ffd7a9;
+}
+
+.vermelho-claro{
+  background-color: #ffd7a9;
+}
+
+h1{
+  font-family: 'Fascinate', cursive;
+}
+
+.font-header {
+  font-family: 'Fascinate', cursive;
+}
+
+p{
+  font-family: "Sour Gummy", sans-serif;
+}
