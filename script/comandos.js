@@ -5,6 +5,17 @@ function irparalogin(){
     location.href = "login.html"
 }
 
+function irparacheckout(){
+    location.href = "checkout.html"
+}
+
+// Função voltar pra home
+
+function irparahome(){
+    location.href = "home.html"
+}
+
+
 // HTML Login
 
 function logar(){
@@ -20,6 +31,13 @@ function logar(){
     }
 }
 
+//HTML Checkout
+   
+function irparaprodutos(){
+    alert('Pedido Recebido');
+    location.href = "produtos.html"
+}
+
 // Comanda
 
 $(document).ready(function () {
@@ -32,7 +50,7 @@ $(document).ready(function () {
     const valorTaylorSwift = 200.00; //taylor
     const valorSabrinaCarpenter = 150.00; //sabrina
     const valorCyndiLauper = 200.00; //cyndi
-    const valorLouis = 200.00; //louis
+    const valorLouis = 280.00; //louis
     const valorRitaLee = 300.00; //ritalee
     const valorTimMaia = 300.00; //timmaia
     const valorDjavan = 200.00; //djavan
