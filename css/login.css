@@ -1,24 +1,25 @@
 .navbar-sticky {
-    position: sticky;
-    
-  }
-  body {
-    background: url(../img/download.jpg) no-repeat center center fixed;
-    background-size: cover; 
-  }
-  .form-custom-email {
-    width: 35%;
-    background-color: rgba(0, 0, 0, 0.7); 
-    border-radius: 10px;
-    padding: 20px;
-    color:aliceblue;
-  }
+  position: sticky;    
+}
+body {
+  background: url(../img/download.jpg) no-repeat center center fixed;
+  background-size: cover; 
+}
+.form-custom-email {
+  width: 25%;
+  background-color: rgba(0, 0, 0, 0.7); 
+  border-radius: 10px;
+  padding: 20px;
+  color:aliceblue;
+}
+.form-control {
+  height: 45px; 
+  font-size: 16px; 
+}
+textarea.form-control {
+  height: 150px; 
+}
+.cor{
+  color:#77262e;
+}
   
-  .form-control {
-    height: 45px; 
-    font-size: 16px; 
-  }
-  
-  textarea.form-control {
-    height: 150px; 
-  }
